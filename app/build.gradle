@@ -17,6 +17,7 @@ android {
         applicationId "com.example.wolagent"
         buildConfigField "String", "WOL_PASSWORD", getLocalProperty("WOL_PASSWORD")
         buildConfigField "String", "WOL_MACADDRESS", getLocalProperty("WOL_MACADDRESS")
+        buildConfigField "String", "WOL_IP", getLocalProperty("WOL_IP")
         minSdkVersion 24
         targetSdkVersion 28
         versionCode 1

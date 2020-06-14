@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     String password = object.getString("password");
                     if (password.equals(BuildConfig.WOL_PASSWORD)) {
 
-                        wakeup("255.255.255.255", BuildConfig.WOL_MACADDRESS);
+                        wakeup(BuildConfig.WOL_IP, BuildConfig.WOL_MACADDRESS);
 
                         response.send("{\"status\": \"OK\"}");
                         return;
